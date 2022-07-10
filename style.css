@@ -1,0 +1,152 @@
+* {
+    Padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    padding: 0 4rem;
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+}
+
+header > h6 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f68084 ;
+}
+
+.name {
+    color: #a6c0fe;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+.title {
+    padding:4rem 0 0;
+} 
+
+.timeLine{
+    text-align: center;
+
+}
+
+#careerLength {
+    font-size: 1.5rem;
+    margin: .5rem 0;
+    font-weight: 900;
+    color: red;
+}
+
+.container {
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+h1, h4, footer{
+    text-align: center;
+}
+
+h2 {
+    margin: 2rem;
+}
+
+.intro, .achievement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.introImg{
+    padding: 0 0 0 2rem;
+    flex-shrink: 2;
+    display: flex;
+    justify-content: center;
+}
+.introContent{
+    padding: 0 2rem;
+    flex: 2;
+    flex-shrink: 1;
+}
+
+.introContent > p {
+    line-height: 1.65rem;
+}
+
+.diveder {
+    margin: 5% 0;
+    height: 5px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+.achievement {
+  align-items: flex-start;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+footer {
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    margin-top: 10%;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro, .achievement{
+        display: block;
+    }
+    .achievement{
+        display: block;
+        margin-left: 3rem;
+    }
+    h3 {
+        margin: 1rem 0;
+    }
+    .introImg{
+       float: left;
+       min-width: 230px;
+       padding: 0 2rem;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding-top: 2rem;
+    }
+    h1 {
+        margin: 0;
+    }
+    .diveder {
+        margin: 10% auto 5%;
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    header {
+        padding-left: 2rem;
+        border-bottom: 2px solid #a6c0fe;
+    }
+    header > h6 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+  }

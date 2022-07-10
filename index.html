@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tribute Page for Jay Chou</title>
+  </head>
+  <body>
+    <header>
+      <h6><span class="name">Jay Chou:</span> King of Mandopop</h6>
+    </header>
+    <div class="hero">
+      <div class="title">
+        <h1>Meeet King of Mandopop:</h1>
+        <h1>Jay Chou</h1>
+      </div>
+      <div class="timeLine">
+        <div id="startDate">Started from:&nbsp;</div>
+        <p id="dateStamp">Until now:&nbsp;</p>
+        <p>He has been famous for more than&nbsp;</p>
+        <p id="careerLength"></p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Who is Jay Chou?</h2>
+      <div class="intro">
+        <div class="introImg">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Jay_Chou image on wikipedia"
+          />
+        </div>
+        <div class="introContent">
+          <p>
+            Jay Chou (traditional Chinese: 周杰倫; simplified Chinese: 周杰伦;
+            pinyin: Zhōu Jiélún) is a Taiwanese singer, songwriter, record
+            producer, actor, and television personality. Dubbed the "King of
+            Mandopop", and having sold over 30 million records, Chou is one of
+            the best-selling artists in the Greater China area and is known for
+            his work with lyricist Vincent Fang, with whom he has frequently
+            collaborated on his music. He has since starred in a number of
+            movies, becoming known to Western audiences when he made
+            his Hollywood debut in 2011 with The Green Hornet, starring
+            alongside Seth Rogen and Christoph Waltz, followed by Now You See Me
+            2 .
+          </p>
+        </div>
+      </div>
+      <div class="diveder"></div>
+      <h2>Achievement</h2>
+      <div class="achievement">
+        <div class="achievement_music">
+          <h3>MUSIC - Album</h3>
+          <ul>
+            <li>Jay</li>
+            <li>Fantasy</li>
+            <li>The Eight Dimensions</li>
+            <li>Yeh Hui–mei</li>
+            <li>Common Jasmin Orange</li>
+            <li>November's Chopin</li>
+            <li>Still Fantasy</li>
+            <li>On the Run!</li>
+            <li>Capricorn</li>
+            <li>The Era</li>
+            <li>Wow!</li>
+            <li>Opus 12</li>
+            <li>Aiyo, Not Bad</li>
+            <li>Jay Chou's Bedtime Stories</li>
+          </ul>
+        </div>
+        <div class="achievement_acting">
+          <h3>ACTING</h3>
+          <ul>
+            <li>Secret</li>
+            <li>Curse of the Gliden Flower</li>
+            <li>Now You See Me 2</li>
+            <li>TInitial D</li>
+            <li>Su Qi-er</li>
+            <li>The Viral Factor</li>
+            <li>The Green Hornet</li>
+            <li>Kung Fu Dunk</li>
+            <li>The Treasure Hunter</li>
+            <li>The Rooftop</li>
+            <li>Shuang dao</li>
+            <li>10,000 Miles</li>
+          </ul>
+        </div>
+        <div class="achievement_directing">
+          <h3>DIRECTING</h3>
+          <ul>
+            <li>Secret</li>
+            <li>Jay Chou: Piano Sorrow</li>
+            <li>Pandamen</li>
+            <li>The Rooftop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h4>
+        LEARN MORE ABOUT JAY CHOU ON
+        <a href="https://en.wikipedia.org/wiki/Jay_Chou">wikipedia</a>
+      </h4>
+      created by <a href="https://github.com/LiChenJoe">Li-Chen</a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
